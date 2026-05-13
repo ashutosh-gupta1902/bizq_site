@@ -48,7 +48,7 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products <i class="fas fa-chevron-down dropdown-icon"></i></a>
             <ul class="dropdown-menu dropdown-menu-dark">
               <li><a class="dropdown-item" href="product-esg.html">BiziQ ESG Platform</a></li>
-              <li><a class="dropdown-item" href="product-drone.html">Drone Assessment System</a></li>
+              <li><a class="dropdown-item" href="product-drone.html">AeroVisibility</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="blog.html" data-page="blog">Blog</a></li>
@@ -71,53 +71,54 @@
           </div>
           <p class="footer-description">Empowering maritime sustainability through verified ESG data and green financing solutions.</p>
           <div class="social-links mt-4">
-            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/biziqconsulting/" class="social-link"><i class="fab fa-linkedin"></i></a>
             <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
       <div class="col-lg-2 col-md-6">
         <h5 class="footer-title">Quick Links</h5>
         <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="corporate-esg.html">Corporate ESG</a></li>
+          <li><a href="esg-intelligence.html">Explore ESG Intelligence</a></li>
           <li><a href="contact.html#demo">Request Demo</a></li>
         </ul>
       </div>
       <div class="col-lg-2 col-md-6">
         <h5 class="footer-title">Products</h5>
         <ul class="footer-links">
-          <li><a href="product-esg.html">ESG Platform</a></li>
-          <li><a href="product-drone.html">Drone Assessment</a></li>
-          <li><a href="#">API Access</a></li>
-          <li><a href="#">Enterprise</a></li>
+          <li><a href="corporate-esg.html">Corporate ESG Platform</a></li>
+          <li><a href="esg-intelligence.html">ESG Intelligence</a></li>
+          <li><a href="product-drone.html">AeroVisibility</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
         </ul>
       </div>
       <div class="col-lg-2 col-md-6">
         <h5 class="footer-title">Legal</h5>
         <ul class="footer-links">
           <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-          <li><a href="#">Compliance</a></li>
+          <li><a href="privacy.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Cookie Policy</a></li>
+          <li><a href="privacy.html">Compliance</a></li>
         </ul>
       </div>
       <div class="col-lg-2 col-md-6">
         <h5 class="footer-title">Contact</h5>
         <ul class="footer-links">
-          <li><a href="mailto:info@biziq.com">info@biziq.com</a></li>
-          <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
-          <li><a href="#">Support Center</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="mailto:admin@biziqconsulting.in">admin@biziqconsulting.in</a></li>
+          <li><a href="tel:+918767273015">8767273015 / 8275877708</a></li>
+          <li><a href="contact.html">Support Center</a></li>
+          <li><a href="contact.html">Careers</a></li>
         </ul>
       </div>
     </div>
     <hr class="footer-divider" />
     <div class="row">
       <div class="col-12 text-center">
-        <p class="footer-copyright">&copy; 2025 BiziQ. All rights reserved. | Measure. Improve. Finance. eVISIBILITY.</p>
+        <p class="footer-copyright">&copy; 2025 BiziQ. All rights reserved. | Measure. Improve. Finance. ESG Visibility.</p>
       </div>
     </div>
   </div>

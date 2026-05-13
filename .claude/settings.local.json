@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "mcp__acp__Bash",
-      "mcp__acp__Edit"
+      "mcp__acp__Edit",
+      "PowerShell(Get-ChildItem \"D:\\\\bizq_site\" -File | Sort-Object Length -Descending | Select-Object Name, @{N='SizeMB';E={[math]::Round\\($_.Length/1MB,2\\)}} | Format-Table -AutoSize)",
+      "PowerShell(\\(Get-Content \"D:\\\\bizq_site\\\\index.html\" | Measure-Object -Line\\).Lines)"
     ]
   }
 }
