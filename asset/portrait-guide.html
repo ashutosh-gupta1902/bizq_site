@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portrait Guide - Suresh Choudhary</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 40px 20px;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 40px;
+        font-size: 2.5em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 40px;
+      }
+
+      .portrait-card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      .portrait-header {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .portrait-header h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.9em;
+      }
+
+      .status-before {
+        background: #ffebee;
+        color: #c62828;
+      }
+
+      .status-after {
+        background: #e8f5e9;
+        color: #2e7d32;
+      }
+
+      .portrait-frame {
+        width: 100%;
+        aspect-ratio: 3/4;
+        background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 25px;
+        border: 3px solid #e0e0e0;
+      }
+
+      .guide-lines {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .horizontal-line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 0, 0, 0.5);
+        left: 0;
+      }
+
+      .vertical-line {
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background: rgba(255, 0, 0, 0.5);
+        top: 0;
+      }
+
+      .eye-level {
+        top: 33%;
+        background: rgba(0, 150, 255, 0.7);
+        height: 2px;
+      }
+
+      .eye-level::after {
+        content: "EYE LEVEL";
+        position: absolute;
+        right: 10px;
+        top: -20px;
+        background: rgba(0, 150, 255, 0.9);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: bold;
+      }
+
+      .center-vertical {
+        left: 50%;
+      }
+
+      .lighting-indicator {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 230, 100, 0.8),
+          transparent
+        );
+        border: 2px solid rgba(255, 200, 0, 0.6);
+      }
+
+      .key-light {
+        top: 20%;
+        left: 15%;
+      }
+
+      .fill-light {
+        top: 25%;
+        right: 15%;
+        opacity: 0.6;
+      }
+
+      .rim-light {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0.4;
+      }
+
+      .portrait-placeholder {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #666;
+      }
+
+      .portrait-placeholder img {
+        width: 90%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .face-outline {
+        position: absolute;
+        width: 200px;
+        height: 280px;
+        border: 3px dashed #2196f3;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .angle-indicator {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .issues-list {
+        background: #fff3e0;
+        border-left: 4px solid #f57c00;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .improvements-list {
+        background: #e8f5e9;
+        border-left: 4px solid #4caf50;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .issues-list h3,
+      .improvements-list h3 {
+        margin-bottom: 15px;
+        font-size: 1.2em;
+      }
+
+      .issues-list ul,
+      .improvements-list ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .issues-list li,
+      .improvements-list li {
+        padding: 8px 0;
+        padding-left: 30px;
+        position: relative;
+      }
+
+      .issues-list li::before {
+        content: "✗";
+        position: absolute;
+        left: 5px;
+        color: #f44336;
+        font-weight: bold;
+      }
+
+      .improvements-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 5px;
+        color: #4caf50;
+        font-weight: bold;
+      }
+
+      .specifications {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        margin-top: 30px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      .spec-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 25px;
+      }
+
+      .spec-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 25px;
+        border-radius: 15px;
+        color: white;
+      }
+
+      .spec-card h4 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        opacity: 0.9;
+      }
+
+      .spec-value {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .spec-description {
+        font-size: 0.9em;
+        opacity: 0.8;
+      }
+
+      @media (max-width: 768px) {
+        .comparison-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📸 Professional Portrait Recreation Guide</h1>
+
+      <div class="comparison-grid">
+        <!-- BEFORE Card -->
+        <div class="portrait-card">
+          <div class="portrait-header">
+            <h2>❌ Current Photo</h2>
+            <span class="status-badge status-before">NEEDS IMPROVEMENT</span>
+          </div>
+
+          <div class="portrait-frame">
+            <div class="guide-lines">
+              <div class="horizontal-line" style="top: 40%"></div>
+              <div class="vertical-line" style="left: 45%"></div>
+            </div>
+            <div class="angle-indicator">↗️ Camera Below Eye Level</div>
+            <div class="portrait-placeholder">
+              <p style="font-size: 3em; margin-bottom: 10px">📷</p>
+              <p>Low angle shot<br />Looking upward</p>
+            </div>
+          </div>
+
+          <div class="issues-list">
+            <h3>Issues Identified:</h3>
+            <ul>
+              <li>Camera positioned below subject</li>
+              <li>Subject looking upward</li>
+              <li>Off-center composition</li>
+              <li>Overexposed/flat lighting</li>
+              <li>Lacks depth and dimension</li>
+              <li>Head tilted backward</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- AFTER Card -->
+        <div class="portrait-card">
+          <div class="portrait-header">
+            <h2>✅ Improved Version</h2>
+            <span class="status-badge status-after">PROFESSIONAL</span>
+          </div>
+
+          <div class="portrait-frame">
+            <div class="guide-lines">
+              <div class="horizontal-line eye-level"></div>
+              <div class="vertical-line center-vertical"></div>
+              <div class="lighting-indicator key-light"></div>
+              <div class="lighting-indicator fill-light"></div>
+              <div class="lighting-indicator rim-light"></div>
+            </div>
+            <div class="face-outline"></div>
+            <div class="angle-indicator">➡️ Eye Level - Perfect</div>
+            <div class="portrait-placeholder">
+              <p style="font-size: 3em; margin-bottom: 10px">👤</p>
+              <p>Front-facing<br />Eye level<br />Centered</p>
+            </div>
+          </div>
+
+          <div class="improvements-list">
+            <h3>Key Improvements:</h3>
+            <ul>
+              <li>Camera at exact eye level</li>
+              <li>Direct eye contact with lens</li>
+              <li>Perfect center alignment</li>
+              <li>3-point professional lighting</li>
+              <li>Proper depth and shadows</li>
+              <li>Natural head position</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Specifications -->
+      <div class="specifications">
+        <h2 style="text-align: center; margin-bottom: 10px; font-size: 2em">
+          ⚙️ Technical Specifications
+        </h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px">
+          Professional settings for optimal results
+        </p>
+
+        <div class="spec-grid">
+          <div class="spec-card">
+            <h4>📐 Camera Position</h4>
+            <div class="spec-value">Eye Level</div>
+            <div class="spec-description">
+              0° angle, perfectly horizontal, 3-4 feet distance
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <h4>💡 Lighting Setup</h4>
+            <div class="spec-value">3-Point</div>
+            <div class="spec-description">
+              Key light 45° left, fill light 45° right, rim light top
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <h4>🎯 Focus Point</h4>
+            <div class="spec-value">Eyes</div>
+            <div class="spec-description">
+              Sharp focus on eyes, slight background blur (f/4-f/5.6)
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <h4>📏 Composition</h4>
+            <div class="spec-value">Centered</div>
+            <div class="spec-description">
+              Eyes at upper 1/3, perfect vertical/horizontal symmetry
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <h4>🎨 Background</h4>
+            <div class="spec-value">White</div>
+            <div class="spec-description">
+              Clean seamless white with subtle gradient vignette
+            </div>
+          </div>
+
+          <div class="spec-card">
+            <h4>📸 Lens Choice</h4>
+            <div class="spec-value">50-85mm</div>
+            <div class="spec-description">
+              Portrait focal length for natural perspective
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

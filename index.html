@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiziQ - Measure. Improve. Finance. ESG Visibility.</title>
+    <meta name="description"
+        content="BiziQ provides ESG visibility and financing solutions for the maritime ecosystem. Measure, improve, and finance your sustainability journey." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="asset/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="asset/icon-192x192.png" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BiziQ - Measure. Improve. Finance. eVISIBILITY." />
+    <meta property="og:description"
+        content="BiziQ provides ESG visibility and financing solutions for the maritime ecosystem. Measure, improve, and finance your sustainability journey." />
+    <meta property="og:image" content="asset/eVISIBILITY-log.png" />
+    <meta property="og:url" content="https://biziq.com" />
+    <meta property="og:site_name" content="BiziQ eVISIBILITY" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BiziQ - Measure. Improve. Finance. eVISIBILITY." />
+    <meta name="twitter:description"
+        content="BiziQ provides ESG visibility and financing solutions for the maritime ecosystem." />
+    <meta name="twitter:image" content="asset/eVISIBILITY-log.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="hero-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline id="heroVideo" poster="asset/hero-poster.jpg"
+                aria-label="Maritime ocean background video">
+                <source src="asset/hero-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Maritime ESG Intelligence Platform</span>
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000">
+                            <span class="animated-text" id="animatedTagline">Real data. Real standards. Real ESG
+                                improvement</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Empowering shipping, ports, and logistics
+                            companies to measure, improve, and monetize
+                            their sustainability journey with AI-powered
+                            analytics and verified ESG scores.
+                        </p>
+                        <div class="hero-features" data-aos="fade-up" data-aos-delay="300">
+                            <div class="hero-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Automated Data Collection</span>
+                            </div>
+                            <div class="hero-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-time Compliance</span>
+                            </div>
+                            <div class="hero-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Green Finance Access</span>
+                            </div>
+                        </div>
+                        <div class="hero-cta mt-4" data-aos="fade-up" data-aos-delay="400">
+                            <a href="corporate-esg.html" class="btn btn-primary btn-lg me-3">Corporate ESG</a>
+                            <a href="esg-intelligence.html" class="btn btn-outline-light btn-lg"><i
+                                    class="fas fa-arrow-right me-2"></i>Explore ESG Intelligence</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live ESG Metrics Ticker -->
+        <div class="metrics-ticker">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="metric-card-new">
+                            <div class="metric-icon-wrapper">
+                                <div class="metric-icon-bg gradient-blue">
+                                    <i class="fas fa-ship"></i>
+                                </div>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" data-target="1247">
+                                    0
+                                </div>
+                                <div class="metric-label">
+                                    Ships Onboarded
+                                </div>
+                            </div>
+                            <div class="metric-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+12%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="metric-card-new">
+                            <div class="metric-icon-wrapper">
+                                <div class="metric-icon-bg gradient-green">
+                                    <i class="fas fa-anchor"></i>
+                                </div>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" data-target="342">
+                                    0
+                                </div>
+                                <div class="metric-label">Ports Rated</div>
+                            </div>
+                            <div class="metric-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="metric-card-new">
+                            <div class="metric-icon-wrapper">
+                                <div class="metric-icon-bg gradient-purple">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" data-target="268945">
+                                    0
+                                </div>
+                                <div class="metric-label">
+                                    Visitors Count
+                                </div>
+                            </div>
+                            <div class="metric-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+9%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="metric-card-new">
+                            <div class="metric-icon-wrapper">
+                                <div class="metric-icon-bg gradient-orange">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                            </div>
+                            <div class="metric-content">
+                                <div class="metric-value" data-target="428">
+                                    0
+                                </div>
+                                <div class="metric-label">
+                                    Active Clients
+                                </div>
+                            </div>
+                            <div class="metric-trend">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+11%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="trusted-section py-5">
+        <div class="container">
+            <div class="text-center mb-4" data-aos="fade-up">
+                <p class="trusted-label">Trusted by Industry Leaders</p>
+            </div>
+            <div class="partner-scroll-wrapper">
+                <div class="partner-scroll-track">
+                    <div class="logo-item">
+                        <img src="asset/partners/p1.jpeg" alt="Partner logo 1" />
+                        <span>AeroPhoenix</span>
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/partners/p4.png" alt="RegenESG Consulting LLP logo" />
+                        <span>RegenESG Consulting</span>
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/partners/p3.png" alt="Sammidhav logo" />
+                        <span>Sammidhav</span>
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/partners/p2.png" alt="MECIA logo" />
+                        <span>MECIA</span>
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/partners/p5.png" alt="INDEPRO logo" />
+                        <span>INDEPRO</span>
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/partners/p7.png" alt="Drone AI logo" />
+                        <span>Drone AI</span>
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/partners/p6.png" alt="TiE logo" />
+                        <span>TiE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About BiziQ Snapshot -->
+    <section class="about-section py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="about-video-container">
+                        <img src="asset/about us.jpeg" alt="About BizIQ eVISIBILITY" class="rounded-4 shadow-lg w-100"
+                            loading="lazy" />
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h2 class="section-title">
+                        Turning Maritime ESG Challenges into Opportunities.
+                    </h2>
+                    <p class="section-description">
+                        BizIQ ESG Visibility™ is a maritime ESG analytics
+                        platform that connects real operational data with
+                        global standards to deliver clear scores,
+                        benchmarks, and actionable insights.
+                    </p>
+                    <p class="section-description">
+                        We turn ESG from a burden into an advantage, helping
+                        fleets, ports, and logistics players meet
+                        regulations, win tenders, and unlock green finance.
+                    </p>
+                    <p class="section-description">
+                        By unifying operational data, public datasets, and
+                        ESG frameworks, we offer simple dashboards,
+                        compliance-ready reports, and AI-driven guidance for
+                        continuous improvement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature Cards in New Row -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="about-features-grid">
+                        <div class="about-feature-card" data-index="1" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="feature-card-number">01</div>
+                            <div class="feature-card-icon-wrapper">
+                                <div class="feature-card-icon gradient-blue">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <h4 class="feature-card-title">
+                                Real-time ESG Monitoring
+                            </h4>
+                            <p class="feature-card-description">
+                                Continuous tracking and scoring of
+                                environmental, social, and governance
+                                metrics with live dashboards
+                            </p>
+                            <div class="feature-card-glow"></div>
+                        </div>
+
+                        <div class="about-feature-card" data-index="2" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="feature-card-number">02</div>
+                            <div class="feature-card-icon-wrapper">
+                                <div class="feature-card-icon gradient-purple">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                            </div>
+                            <h4 class="feature-card-title">
+                                AI-Powered Drone Tech
+                            </h4>
+                            <p class="feature-card-description">
+                                Advanced autonomous assessment technology
+                                with intelligent image analysis and instant
+                                scoring
+                            </p>
+                            <div class="feature-card-glow"></div>
+                        </div>
+
+                        <div class="about-feature-card" data-index="3" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="feature-card-number">03</div>
+                            <div class="feature-card-icon-wrapper">
+                                <div class="feature-card-icon gradient-green">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                            </div>
+                            <h4 class="feature-card-title">
+                                Investor Connection
+                            </h4>
+                            <p class="feature-card-description">
+                                Direct access to sustainable finance
+                                opportunities and green investment networks
+                            </p>
+                            <div class="feature-card-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Explainer Videos -->
+    <section class="products-section py-5" id="products">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Our Solutions</div>
+                <h2 class="section-title">
+                    Innovative Products for Maritime ESG
+                </h2>
+            </div>
+
+            <!-- Products in One Row -->
+            <div class="row g-4">
+                <!-- Product 1: BiziQ ESG Platform -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="product-card" id="product-esg">
+                        <h3 class="product-title">ESG Performance</h3>
+
+                        <!-- Video Container -->
+                        <div class="mb-4">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube-nocookie.com/embed/WWkaSMDa5Lk?rel=0&modestbranding=1"
+                                    title="ESG Visibility" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen class="rounded" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <p class="product-description">
+                                    BizIQ ESG Visibility™ delivers the
+                                    industry's first multi-stakeholder
+                                    maritime ESG performance engine. Built
+                                    on deep maritime operations expertise
+                                    and global ESG frameworks.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a href="product-esg.html" class="btn btn-primary mt-4">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Drone Assessment System -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="product-card" id="product-drone">
+                        <h3 class="product-title">AeroVisibility</h3>
+
+                        <!-- Video Container -->
+                        <div class="mb-4">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube-nocookie.com/embed/91UL8inasxo?rel=0&modestbranding=1"
+                                    title="Aero Visibility" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen class="rounded" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="row g-3">
+                            <div class="col-md-12">
+                                <p class="product-description">
+                                    AeroVisibility delivers AI-powered drone
+                                    and robotics solutions for ports,
+                                    enabling real-time monitoring, compliance,
+                                    and smart, ESG-driven maritime operations.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <a href="product-drone.html" class="btn btn-primary mt-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section py-5" id="why-choose">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Why Choose BiziQ</div>
+                <h2 class="section-title">
+                    The Complete Maritime ESG Solution
+                </h2>
+                <p class="section-description mx-auto" style="max-width: 700px">
+                    From data collection to green financing, we provide
+                    everything you need to transform ESG compliance into
+                    competitive advantage.
+                </p>
+            </div>
+
+            <div class="swiper benefitSwiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <div class="benefit-icon gradient-blue">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="benefit-title">
+                                Unified Data Platform
+                            </h4>
+                            <p class="benefit-description">
+                                Consolidate vessel, port, and logistics data
+                                into a single source of truth. Automated
+                                collection eliminates manual reporting.
+                            </p>
+                            <ul class="benefit-list">
+                                <li>
+                                    <i class="fas fa-check"></i> AIS &
+                                    sensor integration
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> API
+                                    connections
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Historical
+                                    data import
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="benefit-card featured">
+                            <div class="benefit-badge">Most Popular</div>
+                            <div class="benefit-icon gradient-green">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h4 class="benefit-title">
+                                AI-Powered Analytics
+                            </h4>
+                            <p class="benefit-description">
+                                Get actionable insights with machine
+                                learning models trained on maritime-specific
+                                ESG data and global standards.
+                            </p>
+                            <ul class="benefit-list">
+                                <li>
+                                    <i class="fas fa-check"></i> Predictive
+                                    scoring
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Benchmark
+                                    comparisons
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Improvement
+                                    recommendations
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <div class="benefit-icon gradient-purple">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h4 class="benefit-title">
+                                Green Finance Access
+                            </h4>
+                            <p class="benefit-description">
+                                Connect directly with sustainable finance
+                                providers using verified ESG scores that
+                                meet investor requirements.
+                            </p>
+                            <ul class="benefit-list">
+                                <li>
+                                    <i class="fas fa-check"></i> Investor
+                                    matching
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Compliance
+                                    reports
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Due
+                                    diligence support
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <div class="benefit-icon gradient-orange">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="benefit-title">
+                                Regulatory Compliance
+                            </h4>
+                            <p class="benefit-description">
+                                Stay ahead of IMO, EU ETS, and regional
+                                regulations with automated monitoring and
+                                proactive alerts.
+                            </p>
+                            <ul class="benefit-list">
+                                <li>
+                                    <i class="fas fa-check"></i> IMO DCS &
+                                    CII tracking
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> EU MRV
+                                    reporting
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Poseidon
+                                    Principles
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <div class="benefit-icon gradient-blue">
+                                <i class="fas fa-helicopter"></i>
+                            </div>
+                            <h4 class="benefit-title">
+                                Drone Verification
+                            </h4>
+                            <p class="benefit-description">
+                                Autonomous emission monitoring with
+                                AI-powered analysis for independent
+                                third-party verification.
+                            </p>
+                            <ul class="benefit-list">
+                                <li>
+                                    <i class="fas fa-check"></i> Real-time
+                                    monitoring
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Visual
+                                    documentation
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Instant
+                                    scoring
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="benefit-card">
+                            <div class="benefit-icon gradient-green">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4 class="benefit-title">Expert Support</h4>
+                            <p class="benefit-description">
+                                Our maritime ESG specialists help you
+                                maximize value with personalized guidance
+                                and best practices.
+                            </p>
+                            <ul class="benefit-list">
+                                <li>
+                                    <i class="fas fa-check"></i> Dedicated
+                                    account manager
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Training &
+                                    onboarding
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> 24/7
+                                    technical support
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination benefit-pagination"></div>
+                <div class="swiper-button-next benefit-next"></div>
+                <div class="swiper-button-prev benefit-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Videos -->
+    <section class="infographic-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">How It Works</div>
+                <h2 class="section-title">
+                    Understanding the BiziQ Process
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Infographic 1: ESG Scoring Flow -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="infographic-card">
+                        <div class="infographic-header">
+                            <h4>Corporate ESG Process</h4>
+                        </div>
+                        <div class="ratio ratio-16x9">
+                            <img src="asset/process/process_1 (1).png" alt="Corporate ESG Process" class="rounded w-100"
+                                loading="lazy" />
+                        </div>
+                        <p class="infographic-description">
+                            Discover how BiziQ collects, analyzes, and
+                            scores ESG data from multiple sources to provide
+                            comprehensive sustainability ratings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Infographic 2: Verified ESG to Funding Flow -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="infographic-card">
+                        <div class="infographic-header">
+                            <h4>AeroVisibility Process</h4>
+                        </div>
+                        <div class="ratio ratio-16x9">
+                            <img src="asset/process/process_2.png" alt="Verified ESG to Funding Flow"
+                                class="rounded w-100" loading="lazy" />
+                        </div>
+                        <p class="infographic-description">
+                            AeroVisibility enables ports to digitize operations and unlock real-time intelligence
+                            through AI-powered drones and integrated platforms.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="corporate-process-flow mt-5" data-aos="fade-up" id="intelligence-process">
+                    <div class="infographic-header">
+                        <h4>ESG Intelligence Process</h4>
+                    </div>
+                    <div class="process-steps">
+                        <div class="process-step"><span class="process-index">01</span><span>Registration</span></div>
+                        <div class="process-step"><span class="process-index">02</span><span>Verification</span></div>
+                        <div class="process-step"><span class="process-index">03</span><span>Onboarding</span></div>
+                        <div class="process-step"><span class="process-index">04</span><span>Data Collection</span></div>
+                        <div class="process-step"><span class="process-index">05</span><span>Verification</span></div>
+                        <div class="process-step"><span class="process-index">06</span><span>Report Generation</span></div>
+                        <div class="process-step"><span class="process-index">07</span><span>Client Consent</span></div>
+                        <div class="process-step"><span class="process-index">08</span><span>Visibility</span></div>
+                    </div>-->
+        </div>
+        </div>
+    </section>
+
+    <!-- Maritime Trade & ESG News -->
+    <section class="news-update-section py-5">
+        <div class="container">
+            <!-- <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4">
+                    <div>
+                        <div class="section-label">Latest Updates</div>
+                        <h2 class="section-title mb-0">Maritime Trade & ESG News</h2>
+                    </div>
+                    <div class="news-date" id="newsUpdateDate">Updated: --</div>
+                </div>-->
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Latest Updates</div>
+                <h2 class="section-title">Maritime Trade & ESG News</h2>
+            </div>
+
+            <div class="news-banner mb-4">
+                <img src="asset/10.png" alt="Maritime ESG News Banner" class="img-fluid" />
+                <div class="news-banner-overlay">
+                    Weekly outlook for maritime trade, compliance, and sustainability performance.
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <span class="news-tag">Regulation</span>
+                        <h4>Fleet operators prepare for tighter emissions monitoring</h4>
+                        <p>Ports and operators are accelerating digital tracking to improve audit readiness and reduce
+                            reporting delays.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <span class="news-tag">Trade</span>
+                        <h4>Container corridors prioritize low-carbon logistics partners</h4>
+                        <p>Major cargo networks are introducing ESG performance checks during vendor onboarding and
+                            tender evaluation.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <article class="news-card">
+                        <span class="news-tag">Finance</span>
+                        <h4>Green-linked funding favors verified ESG disclosures</h4>
+                        <p>Financial institutions continue to align lending terms with consistent ESG transparency and
+                            performance benchmarks.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">Success Stories</div>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+
+            <div class="swiper testimonialSwiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "We had been publishing ESG reports for years, but we never knew how banks and
+                                charterers were actually evaluating us. ESGVisibility gave us a clear, investor-grade
+                                view of our ESG performance and showed exactly what to fix to improve our financing
+                                readiness."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar gradient-blue">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5 class="author-name">Capt. Shourya G.</h5>
+                                    <p class="author-role">Fleet Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card featured">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "ESG Visibility helped us understand how our ESG efforts are viewed by Maritime
+                                stakeholders. The lifecycle-focused ESG view was particularly valuable for our growth
+                                strategy."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar gradient-green">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5 class="author-name">Mrs. Bhargavi Garg</h5>
+                                    <p class="author-role">Business Development Head</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Finding ESG-ready shipping and logistics partners is becoming critical for us.
+                                Platforms like ESGVisibility make it easier to identify operators that meet our
+                                sustainability and compliance expectations."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar gradient-purple">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5 class="author-name">Mr. Nicolae Barr</h5>
+                                    <p class="author-role">Sustainability Head, Greece-based Chartering Firm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Our customers increasingly ask about ESG compliance across the supply chain.
+                                ESGVisibility gave us a structured, credible way to demonstrate our ESG maturity to
+                                global clients and partners."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar gradient-blue">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5 class="author-name">Mr. Anil Thomas</h5>
+                                    <p class="author-role">Strategy Head, Multimodal Logistics Operator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card featured">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "For banks, ESG assessment is fragmented and time-consuming, especially in maritime and
+                                logistics. ESGVisibility consolidates ESG information, regulatory exposure, and
+                                performance indicators in one place, supporting faster and more consistent credit
+                                evaluation."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar gradient-green">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="author-info">
+                                    <h5 class="author-name">ESG Risk & Credit Team</h5>
+                                    <p class="author-role">Banking & Financial Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination testimonial-pagination"></div>
+                <div class="swiper-button-next testimonial-next"></div>
+                <div class="swiper-button-prev testimonial-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5" id="faq">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-label">FAQ</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description mx-auto" style="max-width: 600px">
+                    Get answers to the most common questions about the BizIQ ESG Visibility Platform.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    What is the BizIQ ESG Visibility Platform?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    BizIQ ESG Visibility is an ESG compliance, monitoring, and intelligence platform
+                                    built for the maritime and supply-chain ecosystem. It helps companies measure,
+                                    track, and improve ESG performance while making their sustainability efforts visible
+                                    and comparable to banks, investors, charterers, cargo owners, and regulators.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="150">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Who is this platform designed for?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>The platform is designed for:</p>
+                                    <ul>
+                                        <li>Ship owners and ship managers</li>
+                                        <li>Charterers and cargo owners</li>
+                                        <li>Ports and terminal operators</li>
+                                        <li>Multimodal transport operators (MTOs)</li>
+                                        <li>Logistics and supply-chain companies</li>
+                                        <li>Marine equipment and OEM manufacturers</li>
+                                    </ul>
+                                    <p class="mb-0">It is also used by financial institutions, investors, and
+                                        infrastructure funds to assess ESG performance and risk.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Is BizIQ an ESG reporting or certification platform?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No. BizIQ ESG Visibility Platform is not a certification body and does not replace
+                                    statutory reporting. It works alongside existing ESG, BRSR, CSRD, sustainability,
+                                    and operational reports by converting them into decision-ready ESG intelligence
+                                    aligned with global standards.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="250">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    What ESG frameworks does the platform support?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>BizIQ maps ESG data across major global and national frameworks, including:</p>
+                                    <ul>
+                                        <li>GRI</li>
+                                        <li>TCFD</li>
+                                        <li>CSRD / ESRS</li>
+                                        <li>BRSR (India)</li>
+                                        <li>EU Taxonomy</li>
+                                        <li>IMO, CII, EEXI</li>
+                                        <li>Poseidon Principles</li>
+                                        <li>SDGs</li>
+                                        <li>Maritime India Vision & Harit Sagar</li>
+                                    </ul>
+                                    <p class="mb-0">This allows clients to view ESG performance through multiple
+                                        stakeholder lenses in one platform.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    How does the platform collect ESG data?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>The platform uses a combination of:</p>
+                                    <ul>
+                                        <li>Client-uploaded ESG, annual, CSR, BRSR, and sustainability reports</li>
+                                        <li>Operational and asset-level data (vessels, ports, logistics assets)</li>
+                                        <li>Publicly available regulatory and industry data</li>
+                                    </ul>
+                                    <p class="mb-0">An AI-powered engine extracts, structures, and maps ESG information
+                                        as per global frameworks automatically.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="350">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq6">
+                                    Do clients need to create new ESG reports?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No. BizIQ is designed to reuse existing disclosures. Clients only need to upload
+                                    what they already have. The platform identifies gaps and suggests improvements where
+                                    needed.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq7">
+                                    How does BizIQ help with ESG compliance?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>BizIQ helps clients:</p>
+                                    <ul>
+                                        <li>Monitor compliance across multiple ESG frameworks</li>
+                                        <li>Identify missing or weak disclosures</li>
+                                        <li>Track regulatory exposure (EU ETS, FuelEU, IMO CII, BRSR, CSRD, etc.)</li>
+                                        <li>Prepare for audits, financing, and stakeholder reviews</li>
+                                    </ul>
+                                    <p class="mb-0">This reduces compliance risk and last-minute surprises.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="450">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq8">
+                                    How does the platform support access to finance?
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>BizIQ translates ESG performance into bank and investor-relevant insights. It
+                                        provides individual ESG efforts and best practices to financial institutions and
+                                        government authorities. Financial institutions can view:</p>
+                                    <ul>
+                                        <li>ESG readiness</li>
+                                        <li>Climate and governance risk indicators</li>
+                                        <li>Alignment with green finance and sustainability-linked lending criteria</li>
+                                    </ul>
+                                    <p>This helps clients improve eligibility for:</p>
+                                    <ul>
+                                        <li>Green loans</li>
+                                        <li>Sustainability-linked finance</li>
+                                        <li>Infrastructure and transition funding</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq9">
+                                    How is ESG visibility provided to investors and cargo owners?
+                                </button>
+                            </h2>
+                            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Clients can control ESG visibility through:</p>
+                                    <ul>
+                                        <li>Public ESG profile cards</li>
+                                        <li>Investor-ready dashboards</li>
+                                        <li>Controlled data sharing with banks, investors, charterers, and cargo owners
+                                        </li>
+                                    </ul>
+                                    <p class="mb-0">This ensures transparency while maintaining data ownership.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="550">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq10">
+                                    Does BizIQ rank or score companies?
+                                </button>
+                            </h2>
+                            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, BizIQ provides ESG scores, indicators, and benchmarking based on disclosed and
+                                    validated data. Scores are presented transparently with clear methodology and gap
+                                    explanations. BizIQ does not issue ratings on behalf of regulators or certification
+                                    bodies.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq11">
+                                    How is BizIQ different from traditional ESG tools?
+                                </button>
+                            </h2>
+                            <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>BizIQ goes beyond reporting by focusing on:</p>
+                                    <ul>
+                                        <li>Maritime and logistics-specific ESG intelligence</li>
+                                        <li>Regulatory and financial relevance</li>
+                                        <li>Supply-chain and stakeholder visibility</li>
+                                    </ul>
+                                    <p class="mb-0">It connects ESG performance with real business outcomes such as
+                                        finance access, cargo preference, and regulatory readiness.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="650">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq12">
+                                    Is the platform suitable for small and mid-size companies?
+                                </button>
+                            </h2>
+                            <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. BizIQ offers tiered subscription plans that allow small and mid-size companies
+                                    to start with ESG discovery and monitoring, then scale up to advanced visibility and
+                                    finance-ready insights as needed.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="700">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq13">
+                                    Is client data secure?
+                                </button>
+                            </h2>
+                            <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Yes. BizIQ follows enterprise-grade data security practices, including:</p>
+                                    <ul>
+                                        <li>Role-based access controls</li>
+                                        <li>Client-controlled visibility</li>
+                                        <li>Secure storage and processing</li>
+                                    </ul>
+                                    <p class="mb-0">Client data is never shared without authorization.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="750">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq14">
+                                    Does BizIQ provide consulting or advisory services?
+                                </button>
+                            </h2>
+                            <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    BizIQ is primarily a platform-based ESG intelligence solution. However, advisory
+                                    support may be available through partners or as part of enterprise engagements.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="800">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq15">
+                                    How often is ESG data updated?
+                                </button>
+                            </h2>
+                            <div id="faq15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Data can be updated:</p>
+                                    <ul>
+                                        <li>When clients upload new disclosures</li>
+                                        <li>When regulatory or benchmark data changes</li>
+                                        <li>Through periodic monitoring cycles</li>
+                                    </ul>
+                                    <p class="mb-0">This ensures ESG insights remain current and relevant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Association Section -->
+    <section class="partners-section py-5">
+        <div class="container">
+            <div class="text-center mb-4" data-aos="fade-up">
+                <div class="section-label">Trusted Association</div>
+            </div>
+            <div class="partner-scroll-wrapper">
+                <div class="partner-scroll-track">
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/APA.png" alt="APA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/Arab Sea Ports Federation.jpg" alt="Arab Sea Ports Federation" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/baltic-exchange.png" alt="Baltic Exchange" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/FASO.jpg" alt="FASO" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/HKSOA.png" alt="HKSOA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/IAPH.jpg" alt="IAPH" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/ICCSA.jpg" alt="ICCSA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/ICS_LOGO_.png" alt="ICS" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/insa-logo.png" alt="INSA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/SSA.png" alt="SSA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/WPO.png" alt="WPO" />
+                    </div>
+                    <!-- Duplicated for seamless loop -->
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/APA.png" alt="APA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/Arab Sea Ports Federation.jpg" alt="Arab Sea Ports Federation" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/baltic-exchange.png" alt="Baltic Exchange" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/FASO.jpg" alt="FASO" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/HKSOA.png" alt="HKSOA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/IAPH.jpg" alt="IAPH" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/ICCSA.jpg" alt="ICCSA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/ICS_LOGO_.png" alt="ICS" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/insa-logo.png" alt="INSA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/SSA.png" alt="SSA" />
+                    </div>
+                    <div class="logo-item">
+                        <img src="asset/Trusted_logo/WPO.png" alt="WPO" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="cta-container" data-aos="fade-up">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="cta-title">
+                            Transforming Maritime ESG Into Measurable Growth
+                        </h2>
+                        <p class="cta-description">
+                            Our platform makes ESG clear, comparable, and
+                            actionable—empowering shipowners, ports,
+                            charterers, logistics operators, and regulators
+                            to improve performance, meet global standards,
+                            and demonstrate leadership with confidence. With
+                            accurate emission monitoring and automated ESG
+                            scoring, you can reduce operational risks, win
+                            green tenders, secure better financing, and
+                            build stronger partnerships across the maritime
+                            value chain.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="contact.html" class="btn btn-light btn-lg">Get Started Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Component Loader (must load before custom scripts) -->
+    <script src="components/loader.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: "ease-out-cubic",
+            once: true,
+            offset: 50,
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const benefitSwiper = new Swiper(".benefitSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: ".benefit-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".benefit-next",
+                prevEl: ".benefit-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        const testimonialSwiper = new Swiper(".testimonialSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: ".testimonial-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".testimonial-next",
+                prevEl: ".testimonial-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
