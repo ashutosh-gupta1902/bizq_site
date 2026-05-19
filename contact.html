@@ -368,7 +368,7 @@
         </section>
 
         <!-- Demo Booking Section -->
-        <section class="demo-booking-section py-4" id="demo-form">
+        <section class="demo-booking-section py-4" id="demo-form" style="display:none">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
@@ -617,6 +617,31 @@
                     );
                     this.reset();
                 });
+
+            // Book Demo button — show hidden section then scroll to it
+            const demoSection = document.getElementById("demo-form");
+            const bookDemoBtn = document.querySelector('a[href="#demo-form"]');
+
+            if (demoSection && bookDemoBtn) {
+                bookDemoBtn.addEventListener("click", function (e) {
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+
+                    demoSection.style.display = "block";
+                    demoSection.classList.add("demo-revealed");
+
+                    requestAnimationFrame(function () {
+                        const navbar = document.querySelector(".navbar");
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const top =
+                            demoSection.getBoundingClientRect().top +
+                            window.pageYOffset -
+                            navbarHeight -
+                            20;
+                        window.scrollTo({ top: top, behavior: "smooth" });
+                    });
+                }, true); // capture phase — fires before script.js bubble listener
+            }
         </script>
     </body>
 </html>

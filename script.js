@@ -58,13 +58,14 @@ function animateCounter(element, target, duration = 2000) {
     });
   };
 
+  const appendPlus = element.getAttribute("data-plus") === "true";
   const timer = setInterval(() => {
     current += increment;
     if (current >= target) {
-      element.textContent = formatNumber(target);
+      element.textContent = formatNumber(target) + (appendPlus ? "+" : "");
       clearInterval(timer);
     } else {
-      element.textContent = formatNumber(current);
+      element.textContent = formatNumber(current) + (appendPlus ? "+" : "");
     }
   }, 16);
 }
