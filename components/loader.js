@@ -34,7 +34,7 @@
     <div class="container-fluid px-4">
       <a class="navbar-brand" href="index.html">
         <div class="logo-container">
-          <img src="asset/eVISIBILITY-log.png" alt="eVISIBILITY Logo" class="logo-image" />
+          <img src="asset/eVISIBILITY-log.png" alt=" Logo" class="logo-image" />
         </div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -67,7 +67,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="footer-brand">
           <div class="logo-container mb-3">
-            <img src="asset/eVISIBILITY-log.png" alt="eVISIBILITY Logo" class="logo-image">
+            <img src="asset/eVISIBILITY-log.png" alt=" Logo" class="logo-image">
           </div>
           <p class="footer-description">Empowering maritime sustainability through verified ESG data and green financing solutions.</p>
           <div class="social-links mt-4">
