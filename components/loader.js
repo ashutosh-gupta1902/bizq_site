@@ -72,8 +72,6 @@
           <p class="footer-description">Empowering maritime sustainability through verified ESG data and green financing solutions.</p>
           <div class="social-links mt-4">
             <a href="https://www.linkedin.com/company/biziqconsulting/" class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
           </div>
         </div>
       </div>
