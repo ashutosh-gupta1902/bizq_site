@@ -185,7 +185,8 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="contact-form-container">
+                    <!-- Query Form -->
+                    <div class="contact-form-container" id="queryFormWrapper">
                         <form class="contact-form" id="inquiryForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -265,6 +266,75 @@
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary btn-lg w-100">
                                         Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Demo Form (replaces query form when Book Demo is clicked) -->
+                    <div class="contact-form-container" id="demoFormWrapper" style="display:none">
+                        <form class="demo-form" id="demoForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="demoName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="demoName" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoEmail" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="demoEmail" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoCompany" class="form-label">Company *</label>
+                                    <input type="text" class="form-control" id="demoCompany" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoPhone" class="form-label">Phone *</label>
+                                    <input type="tel" class="form-control" id="demoPhone" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoProduct" class="form-label">Product Interest *</label>
+                                    <select class="form-select" id="demoProduct" required>
+                                        <option value="">Select...</option>
+                                        <option value="esg">ESG Platform</option>
+                                        <option value="drone">AeroVisibility</option>
+                                        <option value="both">Both Products</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoDate" class="form-label">Preferred Date *</label>
+                                    <input type="date" class="form-control" id="demoDate" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoTime" class="form-label">Preferred Time *</label>
+                                    <select class="form-select" id="demoTime" required>
+                                        <option value="">Select...</option>
+                                        <option value="9am">9:00 AM</option>
+                                        <option value="10am">10:00 AM</option>
+                                        <option value="11am">11:00 AM</option>
+                                        <option value="2pm">2:00 PM</option>
+                                        <option value="3pm">3:00 PM</option>
+                                        <option value="4pm">4:00 PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="demoTimezone" class="form-label">Timezone *</label>
+                                    <select class="form-select" id="demoTimezone" required>
+                                        <option value="">Select...</option>
+                                        <option value="sgt">SGT (Singapore)</option>
+                                        <option value="utc">UTC</option>
+                                        <option value="est">EST (New York)</option>
+                                        <option value="gmt">GMT (London)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="demoNotes" class="form-label">Additional Notes</label>
+                                    <textarea class="form-control" id="demoNotes" rows="3"
+                                        placeholder="Tell us about your specific needs or questions..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        Schedule Demo
                                     </button>
                                 </div>
                             </div>
@@ -380,7 +450,7 @@
     </section>
 
     <!-- Office Locations -->
-    <section class="office-locations py-4">
+    <!-- <section class="office-locations py-4">
         <div class="container">
             <div class="text-center mb-3">
                 <div class="section-label">Our Offices</div>
@@ -411,7 +481,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer Placeholder -->
 
@@ -441,7 +511,7 @@
 
         // Demo Form Submission
         document
-            .querySelector(".demo-form")
+            .getElementById("demoForm")
             ?.addEventListener("submit", function (e) {
                 e.preventDefault();
                 alert(
@@ -450,29 +520,55 @@
                 this.reset();
             });
 
-        // Book Demo button — show hidden section then scroll to it
-        const demoSection = document.getElementById("demo-form");
-        const bookDemoBtn = document.querySelector('a[href="#demo-form"]');
+        const queryFormWrapper = document.getElementById("queryFormWrapper");
+        const demoFormWrapper = document.getElementById("demoFormWrapper");
 
-        if (demoSection && bookDemoBtn) {
+        function showDemoForm() {
+            if (queryFormWrapper) queryFormWrapper.style.display = "none";
+            if (demoFormWrapper) demoFormWrapper.style.display = "block";
+        }
+
+        function showQueryForm() {
+            if (demoFormWrapper) demoFormWrapper.style.display = "none";
+            if (queryFormWrapper) queryFormWrapper.style.display = "block";
+        }
+
+        // Book Demo button
+        const bookDemoBtn = document.querySelector('a[href="#demo-form"]');
+        if (bookDemoBtn) {
             bookDemoBtn.addEventListener("click", function (e) {
                 e.stopImmediatePropagation();
                 e.preventDefault();
+                showDemoForm();
+                const contactSection = document.getElementById("contact-form");
+                if (contactSection) {
+                    requestAnimationFrame(function () {
+                        const navbar = document.querySelector(".navbar");
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const top = contactSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                        window.scrollTo({ top: top, behavior: "smooth" });
+                    });
+                }
+            }, true);
+        }
 
-                demoSection.style.display = "block";
-                demoSection.classList.add("demo-revealed");
-
-                requestAnimationFrame(function () {
-                    const navbar = document.querySelector(".navbar");
-                    const navbarHeight = navbar ? navbar.offsetHeight : 0;
-                    const top =
-                        demoSection.getBoundingClientRect().top +
-                        window.pageYOffset -
-                        navbarHeight -
-                        20;
-                    window.scrollTo({ top: top, behavior: "smooth" });
-                });
-            }, true); // capture phase — fires before script.js bubble listener
+        // Send Message / General Inquiry button
+        const sendMessageBtn = document.querySelector('a[href="#contact-form"]');
+        if (sendMessageBtn) {
+            sendMessageBtn.addEventListener("click", function (e) {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                showQueryForm();
+                const contactSection = document.getElementById("contact-form");
+                if (contactSection) {
+                    requestAnimationFrame(function () {
+                        const navbar = document.querySelector(".navbar");
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const top = contactSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                        window.scrollTo({ top: top, behavior: "smooth" });
+                    });
+                }
+            }, true);
         }
     </script>
 </body>
